@@ -72,7 +72,7 @@ class SofortServiceProvider extends ServiceProvider
     /**
      * Register the bindings.
      */
-    protected function registerBindings(): string
+    protected function registerBindings()
     {
         $this->app->bind('sofort.connection', function (Container $app) {
             $manager = $app['sofort'];
